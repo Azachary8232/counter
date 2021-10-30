@@ -2,3 +2,40 @@
     margin: 0px;
     padding: 0px;
 }
+
+#counter{
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#counter h1{
+    margin-bottom: 25px;
+}
+
+#button{
+    width: 300px;
+    height: 51px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#btn1{
+    background-color: lightblue;
+}
+
+#btn2{
+    background-color: yellow;
+}
