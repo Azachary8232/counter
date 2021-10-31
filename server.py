@@ -10,16 +10,21 @@ def hello():
         session['count'] = session['count'] +1
     else:
         session['count'] = 0
+    if 'count2' in session:
+        session['count2'] = session['count2'] +1
+    else:
+        session['count2'] = 0
     return render_template("index.html")
 
 @app.route('/add')
 def add_count():
     session['count'] = session['count'] + 1
+    session['count2'] = session['count2'] + 1
     return redirect('/')
 
 @app.route('/destroy_session')
 def destroy():
-    session.clear()
+    session.pop('count')
     return redirect("/",)
 
 @app.route('/user_add', methods = ["POST"])
